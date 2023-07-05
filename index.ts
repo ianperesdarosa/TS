@@ -1,8 +1,7 @@
 class Car {
-    private model: String;
-    private age: number;
-    private brand: String;
-
+    private model!: String;
+    private age!: number;
+    private brand!: String;
 
     public setModel(model: String): void {
         this.model = model;
@@ -17,8 +16,8 @@ class Car {
     }
 
 
-    public diplay(): String {
-        return `Model: ${this.model}, Age: ${this.age}, Brand; ${this.brand}`;
+    public diplay(): void {
+        console.log(`Model: ${this.model}, Age: ${this.age}, Brand; ${this.brand}`);
     }
 }
 

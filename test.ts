@@ -1,7 +1,7 @@
-class Car {
-    private name:String;
-    private color:String;
-    private age:number;
+class Car2 {
+    private name!:String;
+    private color!:String;
+    private age!:number;
 
 
     public setName(name: String): void {
@@ -21,7 +21,7 @@ class Car {
     }    
 }
 
-const myCar = new Car();
+const myCar = new Car2();
 myCar.setName("Honda Civic Si");
 myCar.setColor("Preto");
 myCar.setAge(2009);
